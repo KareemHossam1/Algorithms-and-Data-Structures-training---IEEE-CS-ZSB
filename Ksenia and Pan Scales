@@ -1,0 +1,11 @@
+weights = input().split('|')
+add = input()
+for i in add:
+    if len(weights[0]) <= len(weights[1]):
+        weights[0] += i
+    else:
+        weights[1] += i
+if len(weights[0]) == len(weights[1]):
+    print(weights[0], '|', weights[1], sep='')
+else:
+    print('Impossible')
